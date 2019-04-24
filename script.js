@@ -1,7 +1,7 @@
 // **** TASK_1 ****//
 function loop(times = 0, callback = null) {
     for (let i = 0; i < times; i++) {
-        if (callback) callback(i);
+        if (typeof callback === 'function') callback(i);
     }
 }
 
